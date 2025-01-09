@@ -27,7 +27,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_PROD }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_PROD }}
-          aws-region: ${{ secrets.AWS_PROD_REGION }}
+          aws-region: us-east-1
       - run: aws S3 sync ./out s3:///invisio.blog
         
               
